@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@home') -> name('home');
-Route::get('/show/{id}', 'HomeController@show') -> name('show');
+Route::get('/comics/show/{id}', 'HomeController@show') -> name('show');
 
-Route::get('/create', 'HomeController@create') -> name('create');
-Route::post('/store', 'HomeController@store') -> name('store');
+Route::get('/comics/create', 'HomeController@create') -> name('create');
+Route::post('/comics/store', 'HomeController@store') -> name('store');
 
-Route::get('/edit/{id}', 'HomeController@edit') -> name('edit');
-Route::post('/update/{id}', 'HomeController@update') -> name('update');
+Route::get('/comics/edit/{id}', 'HomeController@edit') -> name('edit');
+Route::post('/comics/update/{id}', 'HomeController@update') -> name('update');
 
-Route::get('/delete/{id}', 'HomeController@delete') -> name('delete');
+Route::get('/comics/delete/{id}', 'HomeController@delete') -> name('delete');
