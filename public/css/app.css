@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+  background-color: lightcyan;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+  background-color: cadetblue;
+  font-size: 30px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.box-container a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.box-container a .container-list {
+  width: 200px;
+  height: 90px;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px #000000;
+  margin: 50px;
+  text-align: center;
+  line-height: 85px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.box-container a .container-list .bouncing {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 150px;
+  line-height: 10px;
+  height: 5px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box-container a .container-list .bouncing:hover {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-15px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-15px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.list-container {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.list-container h2 {
+  font-size: 32px;
+}
+
+.list-container h3 {
+  margin: 20px;
+}
+
+.list-container ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  margin: 15px 0;
+}
+
+section input {
+  padding: 5px;
+  margin: 5px 10px;
+  border: 1px solid black;
+}
+
+section .btn-submit {
+  width: 100px;
+  height: 40px;
+  margin: 15px 60px;
+}
+
+section .btn-submit:hover {
+  transition: 1s;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px 0px #99a0c7;
+}
+

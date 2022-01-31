@@ -1,1 +1,127 @@
-//
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    background-color: lightcyan;
+}
+header {
+
+    text-align: center; 
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    background-color: cadetblue;
+    font-size: 30px;
+
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    a {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: cadetblue;
+
+        .container-list {
+            width: 200px;
+            height: 90px;
+            border: 3px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px 0px #000000;            margin: 50px;
+            text-align: center;
+            line-height: 85px;
+            vertical-align: middle;
+            position: relative;
+    
+            .bouncing {
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                width: 150px;
+                line-height: 10px;
+                height: 5px;
+                margin: 0 auto;
+                text-transform: uppercase;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                &:hover {
+                    animation-name: bounce;
+                    -moz-animation-name: bounce;
+                    
+                }      
+            }
+        }         
+    }
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+
+    }
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.list-container {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        margin: 20px;
+    }
+    ul li {
+        list-style: none;
+        margin: 5px 0;
+    }
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        margin: 15px 0;
+    }
+    input {
+        padding: 5px;
+        margin: 5px 10px;
+        border:1px solid black;
+    }
+    .btn-submit {
+        width: 100px;
+        height: 40px;
+        margin: 15px 60px;
+        &:hover {
+            transition: 1s;
+            font-weight: bold;
+            box-shadow: 5px 5px 10px 0px #99a0c7
+        }
+    }
+    
+
+}
+
+
+

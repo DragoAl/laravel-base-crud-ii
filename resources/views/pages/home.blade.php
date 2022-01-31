@@ -1,21 +1,10 @@
 @extends('layouts.main-layout')
 @section('content')
-    <h2><a href="{{route('home')}}">Comic List</a> </h2>
-    <h2><a href="{{route('homeBook')}}">Book List</a></h2>
-    {{-- <h3><a href="{{route('create')}}">CREATE NEW </a></h3>
-    <ul>
-        @foreach ($comics as $comic)
-            <li>
-                <a href="{{route('show', $comic -> id)}}">
-                    {{$comic -> title}}
-                </a>
-                - {{$comic -> autor}}
-                -<a href="{{route('edit', $comic -> id)}}">EDIT</a>
-                -<a href="{{route('delete', $comic -> id)}}">DELETE</a>
-
-
-            </li>
-        @endforeach
-    </ul> --}}
+    <section class="box-container">
+        <a  href="{{route('home')}}"><div class="container-list "><div class="bouncing">Comic List</div></div></a>
+        <a  href="{{route('homeBook')}}"><div class="container-list "><div class="bouncing">Book List</div></div></a>
+    </section>
+   
+    
     
 @endsection
