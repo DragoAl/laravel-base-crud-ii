@@ -7,10 +7,13 @@ use App\Comic;
 
 class HomeController extends Controller
 {
+    public function homePage() {
+        return view('pages.home');
+    }
     public function home() {
         $comics = Comic::all();
 
-        return view('pages.home', compact('comics'));
+        return view('pages.comicHome', compact('comics'));
 
     }
     public function show($id) {

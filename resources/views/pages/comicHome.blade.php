@@ -1,8 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
-    <h2><a href="{{route('home')}}">Comic List</a> </h2>
-    <h2><a href="{{route('homeBook')}}">Book List</a></h2>
-    {{-- <h3><a href="{{route('create')}}">CREATE NEW </a></h3>
+    <h2>Comic List</h2>
+    <h3><a href="{{route('create')}}">CREATE NEW </a></h3>
     <ul>
         @foreach ($comics as $comic)
             <li>
@@ -16,6 +15,6 @@
 
             </li>
         @endforeach
-    </ul> --}}
+    </ul>
     
 @endsection

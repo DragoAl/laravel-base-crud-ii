@@ -9,8 +9,9 @@ $factory->define(Book::class, function (Faker $faker) {
     return [
         'title' => $faker -> words(2, true) ,
         'autor' => $faker -> name() ,
+        'publisher' => $faker -> word(), 
         'release_date' => $faker -> date() ,
-        'pages' => $faker -> numberBetween(50, 200) ,
-        'publisher' => $faker -> word() 
+        'pages' => $faker -> numberBetween(50, 200) 
+        
     ];
 });
